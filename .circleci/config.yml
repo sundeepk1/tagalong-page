@@ -50,7 +50,7 @@ jobs:
       - add_ssh_keys:
           name: "Authenticate with GitHub"
           fingerprints:
-            - "b7:e1:57:93:21:a2:0b:b3:51:f5:ab:0f:b5:92:cb:27"
+            - "79:b7:dc:34:45:38:75:84:3f:a9:97:d9:0c:e1:31:93"
       - run:
           name: Deploy the generated files to Github for publishing
           command: gh-pages --dotfiles --message "Automated publish to gh-pages [ci skip]" --dist public
