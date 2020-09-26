@@ -10,12 +10,7 @@ workflows:
           version: "0.71.0"
           source: "src"
           html-proofer: true
-      - deploy:
-          requires:
-            - hugo/build
-          filters:
-            branches:
-              only: master
+
   nightly:
     # This nightly workflow is to rebuild the site in case there are blog posts
     # that need to be published
@@ -31,9 +26,3 @@ workflows:
           version: "0.71.0"
           source: "src"
           html-proofer: true
-      - deploy:
-          requires:
-            - hugo/build
-          filters:
-            branches:
-              only: master
