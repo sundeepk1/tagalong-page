@@ -63,12 +63,12 @@ jobs:
     #  run: hugo --theme=bilberry-hugo-theme
 
     # Step 5 - Create name file
-    - name: Create cname file
-      run: echo 'tagalong.page' > docs/CNAME
+    #- name: Create cname file
+    #  run: echo 'tagalong.page' > docs/CNAME
 
     # Step 6 - Push our generated site to our gh-pages branch
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./docs
