@@ -1,39 +1,76 @@
-version: 2.1
+version: 2
 
-orbs:
-  hugo: circleci/hugo@1.0.0
+jobs:
+  build:
+    docker:
+      - image: cibuilds/hugo:latest
+    working_directory: ~/hugo
+    environment:
+      HUGO_BUILD_DIR: /root/hugo/public/
+    steps:
+      - checkout:
+          name: "Clone Github repository"
+      - run: 
+          name: "Download 3rd-party dependencies"
+          command: |
+            git submodule sync
+            git submodule update --init
+      - run: 
+          name: "Build static pages with Hugo"
+          command: | 
+            rm -fr $HUGO_BUILD_DIR
+            HUGO_ENV=production hugo -v --buildFuture -d $HUGO_BUILD_DIR
+      - run:
+          name: "Test generated HTML"
+          command: htmlproofer $HUGO_BUILD_DIR --url-swap "^\/${CIRCLE_PROJECT_REPONAME}:" --allow-hash-href --check-html --empty-alt-ignore --disable-external
+      - persist_to_workspace:
+          name: "Persist output for deployment"
+          root: public
+          paths: .
+  deploy:
+    docker:
+      - image: node:8.10.0
+    steps:
+      - checkout:
+          name: "Clone Github repository"
+      - attach_workspace:
+          name: "Load output of build stage"
+          at: public
+      - run:
+          name: Install and configure dependencies
+          command: |
+            # Install gh-pages
+            npm install -g --silent gh-pages@2.0.1
+            # Configure gith
+            git config user.email "oleg@kurapov.com"
+            git config user.name "CircleCI Bot"
+            # Bake in current CircleCI config from master
+            git checkout origin/master .circleci/config.yml
+            mv .circleci public
+      - add_ssh_keys:
+          name: "Authenticate with GitHub"
+          fingerprints:
+            - "b7:e1:57:93:21:a2:0b:b3:51:f5:ab:0f:b5:92:cb:27"
+      - run:
+          name: Deploy the generated files to Github for publishing
+          command: gh-pages --dotfiles --message "Automated publish to gh-pages [ci skip]" --dist public
 
 workflows:
-  main:
+  version: 2
+  demo:
     jobs:
-      - hugo/build:
-          version: "0.71.0"
-          source: "src"
-          html-proofer: true
+      - build:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
+      - approve:
+          requires: 
+            - build
+          type: approval
+          filters:
+            branches:
+              only: master
       - deploy:
           requires:
-            - hugo/build
-          filters:
-            branches:
-              only: master
-  nightly:
-    # This nightly workflow is to rebuild the site in case there are blog posts
-    # that need to be published
-    triggers:
-      - schedule:
-          # Everyday at 10am UTC or 5/6am Eastern
-          cron: "0 10 * * *"
-          filters:
-            branches:
-              only: master
-    jobs:
-      - hugo/build:
-          version: "0.71.0"
-          source: "src"
-          html-proofer: true
-      - deploy:
-          requires:
-            - hugo/build
-          filters:
-            branches:
-              only: master
+            - approve
