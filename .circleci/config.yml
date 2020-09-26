@@ -31,3 +31,9 @@ workflows:
           version: "0.71.0"
           source: "src"
           html-proofer: true
+      - deploy:
+          requires:
+            - hugo/build
+          filters:
+            branches:
+              only: master
