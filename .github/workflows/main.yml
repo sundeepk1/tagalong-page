@@ -39,7 +39,7 @@ jobs:
         run: rm -rf docs
 
       - name: Build
-        run: hugo --minify
+        run: hugo --config src/config.toml --minify
       
       - name: Create cname file
         run: echo 'tagalong.page' > docs/CNAME
