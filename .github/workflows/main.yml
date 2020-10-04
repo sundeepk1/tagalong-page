@@ -33,7 +33,7 @@ jobs:
      # - name: cleanup of old dir contents
      #   run: rm -rf docs
       - name: Build
-        run: hugo --config src/config.toml --minify
+        run: hugo --config tagalong-page/src/config.toml --minify
       #- name: Create cname file
       #  run: |
       #    mkdir -pv docs
