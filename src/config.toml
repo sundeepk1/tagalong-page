@@ -1,4 +1,0 @@
-baseURL = "https://tagalong.page/"
-languageCode = "en-us"
-title = "Tagalong.Page: A blog for budding Devops, SRE engineers"
-theme = "docport"
