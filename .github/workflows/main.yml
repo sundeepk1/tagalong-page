@@ -42,7 +42,9 @@ jobs:
         run: hugo --config src/config.toml --minify
       
       - name: Create cname file
-        run: echo 'tagalong.page' > docs/CNAME
+        run: |
+          mkdir -pv docs
+          echo 'tagalong.page' > docs/CNAME
 
       - name: Deploy
         run: pwd
