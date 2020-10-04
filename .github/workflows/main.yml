@@ -37,7 +37,7 @@ jobs:
       - name: Create cname file
         run: |
           #mkdir -pv docs
-          echo 'tagalong.page' > CNAME
+          echo 'tagalong.page' > src/CNAME
       - name: Deploy
         run: |
           pwd
