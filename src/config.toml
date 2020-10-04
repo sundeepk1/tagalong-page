@@ -13,16 +13,16 @@ defaultContentLanguageInSubdir= false
 enableMissingTranslationPlaceholders = false
 
 
-# [Languages]
-# [Languages.en]
-# title = "Documentation for Hugo docport"
-# weight = 1
-# languageName = "English"
-# 
-# [Languages.fr]
-# title = "Documentation du thème docport"
-# weight = 2
-# languageName = "Français"
+[Languages]
+[Languages.en]
+title = "Documentation for Hugo docport"
+weight = 1
+languageName = "English"
+ 
+[Languages.fr]
+title = "Documentation du thème docport"
+weight = 2
+languageName = "Français"
 
 
 
