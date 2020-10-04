@@ -7,7 +7,7 @@ theme = "docport"
 themesdir = "src/themes/"
 pygmentsCodeFences = true
 pygmentsStyle = "monokai"
-
+publishDir = "site"
 
 defaultContentLanguageInSubdir= false
 enableMissingTranslationPlaceholders = false
