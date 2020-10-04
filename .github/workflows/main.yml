@@ -34,10 +34,10 @@ jobs:
      #   run: rm -rf docs
       - name: Build
         run: hugo --config src/config.toml --minify
-      #- name: Create cname file
-      #  run: |
-      #    mkdir -pv docs
-      #    echo 'tagalong.page' > docs/CNAME
+      - name: Create cname file
+        run: |
+          #mkdir -pv docs
+          echo 'tagalong.page' > CNAME
       - name: Deploy
         run: |
           pwd
