@@ -1,3 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://tagalong.page/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Tagalong.Page: A blog for budding Devops, SRE engineers"
+theme = "docport"
