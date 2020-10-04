@@ -47,7 +47,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          #publish_branch: gh-pages
+          publish_branch: release
   #deploy:
   #  needs: build
   #  runs-on: 'ubuntu-latest'
