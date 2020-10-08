@@ -1,2 +1,0 @@
-<script defer src="{{"/vendor/mermaid/v8.8.0/mermaid.min.js" | relURL}}">mermaid.initialize({startOnLoad:true});</script>
-<div class="mermaid" align="{{ if .Get "align" }}{{ .Get "align" }}{{ else }}center{{ end }}" >{{ safeHTML .Inner  }}</div>
