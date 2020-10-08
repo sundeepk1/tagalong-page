@@ -24,7 +24,7 @@ jobs:
         run: hugo --config src/config.toml --minify
       - name: Create cname file
         run: |
-          mkdir -pv docs
+          mkdir -pv docs >> $GITHUB_ENV
           echo "DOMAIN=tagalong.page" > src/CNAME >> $GITHUB_ENV
       #- name: Deploy
       #  run: |
