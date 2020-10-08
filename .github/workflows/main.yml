@@ -25,7 +25,7 @@ jobs:
       - name: Create cname file
         run: |
           mkdir -pv docs
-          echo "DOMAIN=tagalong.page" > src/CNAME
+          echo "DOMAIN=tagalong.page" > src/CNAME >> $GITHUB_ENV
       #- name: Deploy
       #  run: |
        #   pwd
