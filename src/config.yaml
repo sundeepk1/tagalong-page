@@ -1,6 +1,6 @@
 baseURL: https://tagalong.page
 languageCode: "en-us"
 title: "Welcome to my blog"
-theme: "/src/themes/mainroad"
+title: "Mainroad"
 languageCode: "en-us"
 paginate: "10"
