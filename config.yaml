@@ -22,7 +22,7 @@ Params:
     - date
     - categories
   logo:
-    subtitle: Just another site
+    subtitle: DevOps, SRE and Software Engineering
   sidebar:
     home: right
     list: right
