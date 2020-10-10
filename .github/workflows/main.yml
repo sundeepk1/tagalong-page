@@ -4,7 +4,9 @@ on:
     branches: 
       - devel
   pull_request:
-    branches: [ master ]
+    branches: 
+      - devel
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,31 +20,3 @@ jobs:
         with:
           hugo-version: '0.75.1'
           extended: true
-      - name: cleanup of old dir contents
-        run: rm -rf docs
-      - name: Build
-        run: hugo --config config.toml --minify
-      #- name: Create cname file
-      #  run: |
-      #    mkdir -pv docs
-      #    echo "DOMAIN=tagalong.page" > src/CNAME
-      #- name: Deploy
-      #  run: |
-      #   pwd
-      #   ls -lrt 
-      - name: Deploy to DOCS directory
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          #publish_dir: ./public
-          publish_branch: release
-          cname: tagalong.page
-  #deploy:
-  #  needs: build
-  #  runs-on: 'ubuntu-latest'
-  #  steps:
-  #    - uses: peaceiris/actions-gh-pages@v3
-  #      with:
-  #        github_token: ${{ secrets.GITHUB_TOKEN }}
-  #        publish_dir: ./docs
-  #        publish_branch: gh-pages
