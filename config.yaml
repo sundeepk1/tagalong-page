@@ -35,3 +35,8 @@ Params:
   widgets:
     recent_num: 5
     tags_counter: false
+  mainSections:
+    - General
+    - Operating Systems
+    - Databases
+    
