@@ -22,10 +22,10 @@ jobs:
         run: rm -rf docs
       - name: Build
         run: hugo --config src/config.toml --minify
-      #- name: Create cname file
-      #  run: |
-      #    mkdir -pv docs >> $GITHUB_ENV
-      #    echo "DOMAIN=tagalong.page" > src/CNAME >> $GITHUB_ENV
+      - name: Create cname file
+        run: |
+          mkdir -pv docs >> $GITHUB_ENV
+          echo "DOMAIN=tagalong.page" > src/CNAME >> $GITHUB_ENV
       #- name: Deploy
       #  run: |
       #   pwd
@@ -34,7 +34,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          #publish_dir: ./public
           publish_branch: release
   #deploy:
   #  needs: build
