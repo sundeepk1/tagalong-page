@@ -21,7 +21,7 @@ jobs:
       - name: cleanup of old dir contents
         run: rm -rf docs
       - name: Build
-        run: hugo --config src/config.yaml --minify
+        run: hugo --config config.toml --minify
       #- name: Create cname file
       #  run: |
       #    mkdir -pv docs
