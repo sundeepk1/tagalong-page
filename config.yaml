@@ -6,37 +6,85 @@ theme: mainroad
 disqusShortname: ''
 googleAnalytics: ''
 Author:
-  name: John Doe
+  name: Sundeep Kumar Paulraj
   bio: >-
-    John Doe's true identity is unknown. Maybe he is a successful blogger or
-    writer. Nobody knows it.
+    some description about the author
+    writer.
   avatar: img/avatar.png
 Params:
+  subtitle: ''
   description: A blog on DevOps, SRE and Software Engineering
+  copyright: Sundeep Kumar Paulraj
   opengraph: true
-  twitter_cards: false
+  schema: true
+  twitter_cards: true
   readmore: false
   authorbox: true
+  toc: true
   pager: true
   post_meta:
+    - author
     - date
     - categories
+    - translations
   logo:
     subtitle: DevOps, SRE and Software Engineering
+  mainSections:
+    - General
+    - Operating Systems
+    - Databases
+    - post
+    - blog
+    - news
+  dateformat: '2006-01-02'
+  mathjax: true
+  mathjaxPath: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js'
+  mathjaxConfig: TeX-AMS-MML_HTMLorMML
+  googleFontsLink: 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700'
+  highlightColor: ''
+  #customCSS:
+  #  - css/custom.css
+  #customJS:
+  #  - js/custom.js
+  style:
+    vars:
+      highlightColor: '#e22d30'
+      fontFamilyPrimary: '''Open Sans'', Helvetica, Arial, sans-serif'
+      fontFamilySecondary: >-
+        SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier
+        New', monospace
+  logo:
+    image: img/placeholder.png
+    title: Mainroad
+    subtitle: Just another site
   sidebar:
     home: right
-    list: right
-    single: right
+    list: left
+    single: false
     widgets:
       - search
       - recent
       - categories
       - taglist
+      - social
+      - languages
   widgets:
     recent_num: 5
     tags_counter: false
-  mainSections:
-    - General
-    - Operating Systems
-    - Databases
-    
+    social:
+      facebook: username
+      twitter: username
+      instagram: username
+      linkedin: username
+#      telegram: username
+      github: username
+#      gitlab: username
+#      bitbucket: username
+      email: example@example.com
+#      custom:
+#        - title: Youtube
+#          url: 'https://youtube.com/user/username'
+#          icon: youtube.svg
+#        - title: My Home Page
+#          url: 'http://tagalong.page'
+#
