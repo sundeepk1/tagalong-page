@@ -1,6 +1,23 @@
-baseURL: https://tagalong.page
+baseURL: https://tagalong.page/
 languageCode: "en-us"
 title: "Welcome to my blog"
 title: "Mainroad"
 languageCode: "en-us"
 paginate: "10"
+disqusShortname: 
+googleAnalytics: 
+Author:
+  name: "John Doe"
+  bio: "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
+  avatar: "img/avatar.png"
+Params:
+  description: "John Doe's Personal blog about everything" 
+  opengraph: true
+  twitter_cards: false
+  readmore: true
+  authorbox: true
+  pager: true
+  post_meta:
+    - date
+    - categories
+
