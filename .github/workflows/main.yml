@@ -20,3 +20,5 @@ jobs:
         with:
           hugo-version: '0.75.1'
           extended: true
+      - name: build hugo project
+        run: hugo --minify
