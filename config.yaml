@@ -1,5 +1,5 @@
 baseurl: 'https://tagalong.page/'
-title: Mainroad
+title: Tagalong.Page
 languageCode: en-us
 paginate: '10'
 theme: mainroad
@@ -12,7 +12,7 @@ Author:
     writer. Nobody knows it.
   avatar: img/avatar.png
 Params:
-  description: John Doe's Personal blog about everything
+  description: A blog on DevOps, SRE and Software Engineering
   opengraph: true
   twitter_cards: false
   readmore: false
