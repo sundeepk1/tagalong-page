@@ -22,3 +22,11 @@ jobs:
           extended: true
       - name: build hugo project
         run: hugo --minify
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: release
+          cname: tagalong.page
+          enable_jekyll: false
+          
