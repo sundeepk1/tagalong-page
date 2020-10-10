@@ -1,0 +1,37 @@
+baseurl: 'https://tagalong.page/'
+title: Mainroad
+languageCode: en-us
+paginate: '10'
+theme: mainroad
+disqusShortname: ''
+googleAnalytics: ''
+Author:
+  name: John Doe
+  bio: >-
+    John Doe's true identity is unknown. Maybe he is a successful blogger or
+    writer. Nobody knows it.
+  avatar: img/avatar.png
+Params:
+  description: John Doe's Personal blog about everything
+  opengraph: true
+  twitter_cards: false
+  readmore: false
+  authorbox: true
+  pager: true
+  post_meta:
+    - date
+    - categories
+  logo:
+    subtitle: Just another site
+  sidebar:
+    home: right
+    list: right
+    single: right
+    widgets:
+      - search
+      - recent
+      - categories
+      - taglist
+  widgets:
+    recent_num: 5
+    tags_counter: false
