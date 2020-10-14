@@ -3,13 +3,13 @@ title: Tagalong.Page
 languageCode: en-us
 paginate: '10'
 theme: mainroad
-disqusShortname: ''
-googleAnalytics: ''
+disqusShortname: 'tagalong-page'
+googleAnalytics: 'UA-167419397-1'
 Author:
   name: Sundeep Kumar Paulraj
   bio: >-
-    some description about the author
-    writer.
+    Educated biotechnologist, Trained IT proffessional. 
+    .
   avatar: img/avatar.png
 Params:
   subtitle: ''
@@ -54,9 +54,9 @@ Params:
         SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier
         New', monospace
   logo:
-    image: img/placeholder.png
-    title: Mainroad
-    subtitle: Just another site
+    image: img/logo/tagalong-logo.png
+    title: Tagalong.Page
+    subtitle: DevOps,SRE and Software Engineering
   sidebar:
     home: right
     list: left
@@ -72,15 +72,15 @@ Params:
     recent_num: 5
     tags_counter: false
     social:
-      facebook: username
-      twitter: username
-      instagram: username
-      linkedin: username
+#      facebook: username
+#      twitter: username
+#      instagram: username
+#      linkedin: username
 #      telegram: username
-      github: username
+      github: sundeepk1
 #      gitlab: username
 #      bitbucket: username
-      email: example@example.com
+      email: sundeep.kumar@hotmail.co.in
 #      custom:
 #        - title: Youtube
 #          url: 'https://youtube.com/user/username'
