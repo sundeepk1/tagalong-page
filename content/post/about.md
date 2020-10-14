@@ -20,7 +20,7 @@ widgets: # Enable sidebar widgets in given order per page
   - "search"
   - "recent"
   - "taglist"
-draft: true
+draft: false
 ---
 
 DevOps, SRE, and cloud engineering, these topics require no introduction. They seem to be the buzz words found in every job portal and in social sites such as LinkedIn. However, with such a huge demand for job roles such as “DevOps Engineer", "DevOps Architect", "DevSecOps Architect" etc., it pays to know a little bit more about them. Have you ever wondered the difference between a "Linux Administrator" and a "DevOps Engineer, or what does it mean to be a DevOps Engineer? I sure had when I began my journey.
