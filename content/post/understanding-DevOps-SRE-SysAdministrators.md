@@ -46,21 +46,23 @@ The correlation of DevOps with SDLC can be depicted as below.
 ### What makes a great DevOps Engineer?
 Today DevOps, is one of the major key terms for job search and it has become a hot job role. In my opinion the job role is very demanding and one must be prepared for a continuous learning and upskilling path. We can categorize and list the below few skills that are sought after by most of the employers. 
 
-Operating Systems - Linux (CentOS/RedHat)
-Infrastructure as a code - Terraform
-Cloud Platforms - Google Cloud Platform, Amazon Web Services, Microsoft Azure
-Configuration Management Tools - Ansible, Chef, Puppet
-Source Code Management Tools - Git, Github, BitBucket 
-Continuous Integration/Deployment Tools - Jenkins, Concourse, CircleCI
-Containerization and Orchestration - Docker, Kubernetes
-Programming/ Scripting - Bash, Python 
-Build Tools & Repository Management- Maven, Gradle, JFrog Artifactory
-Code Quality - SonarQube
-Database Administration - MySQL, MongoDB, Redis
-Message Queuing/ Streaming  - Apache Kafka, RabbitMQ
-Middlewares - Apache httpd, Nginx, Apache TomCat
-Logging and Monitoring - Elasticsearch, Prometheus
-Collaboration Tools - JIRA, Confluence 
+| Category             | Tools/Softwares           |
+|----------------------|---------------------------|
+| Operating Systems    | Linux (CentOS/RedHat)     |
+| Infrastructure as a code | Terraform |
+| Cloud Platforms | Google Cloud Platform, Amazon Web Services, Microsoft Azure |
+| Configuration Management Tools | Ansible, Chef, Puppet |
+| Source Code Management Tools | Git, Github, BitBucket |
+| Continuous Integration/Deployment Tools | Jenkins, Concourse, CircleCI |
+| Containerization and Orchestration | Docker, Kubernetes |
+| Programming/ Scripting | Bash, Python |
+| Build Tools & Repository Management | Maven, Gradle, JFrog Artifactory |
+| Code Quality | SonarQube |
+| Database Administration | MySQL, MongoDB, Redis |
+| Message Queuing/ Streaming  | Apache Kafka, RabbitMQ |
+| Middlewares | Apache httpd, Nginx, Apache TomCat |
+| Logging and Monitoring | Elasticsearch, Prometheus | 
+| Collaboration Tools | JIRA, Confluence  |
 
 Certainly the above list of tools looks intimidating and overwhelming, however with practice and time you would have an appreciation for each of these tools and would learn them. 
 
