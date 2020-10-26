@@ -15,7 +15,7 @@ Let’s start with the first part of our journey, And that's understanding what 
 ## What is DevOps?
 DevOps has different connotations to different people. The most common understanding is that it is a portmanteau of “Development” and “Operations”, hence DevOps. For evangelists, DevOps is a culture and a transformation. For some engineers, DevOps is a set of agile tools and techniques. For managers, DevOps is probably a methodology. For other people it is just a buzzword and for recruiters, DevOps is a job role. Every organization has their own understanding and culture around DevOps.
 
-TTo start with, we have to understand that DevOps is not all about Tools, Automation or a team or a person who does DevOps or about the developer who is developing the software product. Let’s deconstruct DevOps. In order to understand DevOps, it's principles and values delivered, we need to have a general idea about Software development lifecycle (SDLC). 
+To start with, we have to understand that DevOps is not all about Tools, Automation or a team or a person who does DevOps or about the developer who is developing the software product. Let’s deconstruct DevOps. In order to understand DevOps, it's principles and values delivered, we need to have a general idea about Software development lifecycle (SDLC). 
 
 Traditionally, Software is developed by developers and then handed over to the Operations team for deploying it to the production environment. There are some well known software methodology for developing software - Waterfall and Agile. For now, understand that the waterfall model is a time consuming methodology whereas Agile is a faster way of developing software and has become very popular in the recent decades.I will have a post later on this topic - “Software development methodology”. 
 
@@ -33,11 +33,12 @@ Long story short, Devops is a way of work (Philosophy) and not the work itself. 
 Please refer to the resources below for more reading and to create an in-depth understanding of DevOps. 
 
 Quite often, DevOps is directly associated with Automation, Continuous Integration, Continuous Delivery etc. which is a way of getting value from DevOps adoption. One of the frameworks that can be associated is CALMS. 
-Culture - people and process
-Automation - Automate repeated tasks 
-Lean - Applying Lean principles to IT
-Metrics - Measure extensively and use to improve 
-Sharing - Continuous learning by sharing knowledge 
+
+* Culture - people and process
+* Automation - Automate repeated tasks 
+* Lean - Applying Lean principles to IT
+* Metrics - Measure extensively and use to improve 
+* Sharing - Continuous learning by sharing knowledge 
 
 The correlation of DevOps with SDLC can be depicted as below.
 
@@ -46,30 +47,30 @@ The correlation of DevOps with SDLC can be depicted as below.
 ### What makes a great DevOps Engineer?
 Today DevOps, is one of the major key terms for job search and it has become a hot job role. In my opinion the job role is very demanding and one must be prepared for a continuous learning and upskilling path. We can categorize and list the below few skills that are sought after by most of the employers. 
 
-| Category             | Tools/Softwares           |
-|----------------------|---------------------------|
-| Operating Systems    | Linux (CentOS/RedHat)     |
-| Infrastructure as a code | Terraform |
-| Cloud Platforms | Google Cloud Platform, Amazon Web Services, Microsoft Azure |
-| Configuration Management Tools | Ansible, Chef, Puppet |
-| Source Code Management Tools | Git, Github, BitBucket |
-| Continuous Integration/Deployment Tools | Jenkins, Concourse, CircleCI |
-| Containerization and Orchestration | Docker, Kubernetes |
-| Programming/ Scripting | Bash, Python |
-| Build Tools & Repository Management | Maven, Gradle, JFrog Artifactory |
-| Code Quality | SonarQube |
-| Database Administration | MySQL, MongoDB, Redis |
-| Message Queuing/ Streaming  | Apache Kafka, RabbitMQ |
-| Middlewares | Apache httpd, Nginx, Apache TomCat |
-| Logging and Monitoring | Elasticsearch, Prometheus | 
-| Collaboration Tools | JIRA, Confluence  |
+| Category                                  | Tools/Softwares                                                |
+|-------------------------------------------|----------------------------------------------------------------|
+| Operating Systems                         | Linux (CentOS/RedHat)                                          |
+| Infrastructure as a code                  | Terraform                                                      |
+| Cloud Platforms                           | Google Cloud Platform, Amazon Web Services, Microsoft Azure    |
+| Configuration Management Tools            | Ansible, Chef, Puppet                                          |
+| Source Code Management Tools              | Git, Github, BitBucket                                         |
+| Continuous Integration/Deployment Tools   | Jenkins, Concourse, CircleCI                                   |
+| Containerization and Orchestration        | Docker, Kubernetes                                             |
+| Programming/ Scripting                    | Bash, Python                                                   |
+| Build Tools & Repository Management       | Maven, Gradle, JFrog Artifactory                               |
+| Code Quality                              | SonarQube                                                      |
+| Database Administration                   | MySQL, MongoDB, Redis                                          |
+| Message Queuing/ Streaming                | Apache Kafka, RabbitMQ                                         |
+| Middlewares                               | Apache httpd, Nginx, Apache TomCat                             |
+| Logging and Monitoring                    | Elasticsearch, Prometheus                                      | 
+| Collaboration Tools                       | JIRA, Confluence                                               |
 
 Certainly the above list of tools looks intimidating and overwhelming, however with practice and time you would have an appreciation for each of these tools and would learn them. 
 
 
 ### How can I become one?
 
-As we can see from the list of skills expected from employers, one has to learn the tools and practice them on a daily basis in order to get the hand of the tools and that would in turn help one to navigate the waters. 
+As we can see from the list of skills expected from employers, one has to learn the tools and practice them on a daily basis in order to get the hang of the tools and that would in turn help one to navigate the waters. 
 
 ### Resources
 
@@ -89,7 +90,7 @@ Kindly allow me to borrow the definition from Wikipedia and then break it down f
 
 > “Site Reliability Engineering (SRE) is a discipline that incorporates aspects of software engineering and applies them to infrastructure and operations problems.”
 
-At this point I would like to highlight a popular quote from Google - “class SRE implements DevOPs”. SRE was developed by Google, in 2003 as a result of few developers maintaining the IT infrastructure. SRE focuses on the reliability of the software.
+At this point I would like to highlight a popular quote from Google - “class SRE implements DevOps”. SRE was developed by Google, in 2003 as a result of few developers maintaining the IT infrastructure. SRE focuses on the reliability of the software.
 
 SRE is said to be a practice and provides various guidelines to achieve reliability, which in turn leads to customer satisfaction. Here the focus is on maintaining a service or system such that it’s highly available, scalable and meets the needs of the end users. When Devops talks about automation, SRE talks about what to automate, how to identify what to automate etc. Explaining SRE requires a separate post in itself. 
 
