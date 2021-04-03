@@ -36,6 +36,8 @@ Specifically, as a DevOps engineer you need to learn git and understand how to m
 I’ve linked a few videos for the installation of git clients on the popular operating systems. This is pretty much straight forward and resources are available on the internet.
  
 ## Windows 
+
+{{<youtube nbFwejIsHlY>}}
 https://www.youtube.com/watch?v=nbFwejIsHlY
 
 ## Linux
