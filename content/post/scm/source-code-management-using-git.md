@@ -38,17 +38,17 @@ I’ve linked a few videos for the installation of git clients on the popular op
 ## Windows 
 
 {{<youtube nbFwejIsHlY>}}
-https://www.youtube.com/watch?v=nbFwejIsHlY
+
 
 ## Linux
 In general linux machines have git client installed. 
 
-https://www.youtube.com/watch?v=gdgravCh_Bw
+{{<youtube gdgravCh_Bw>}}
 
 
 ## MacOS 
 
-https://www.youtube.com/watch?v=PSULlxUk744
+{{<youtube PSULlxUk744>}}
 
 
 #Configuring git
