@@ -58,16 +58,22 @@ We have to configure our git client so that our information can be made availabl
 
 # Repositories and branches
 
+Repo
 
 # Initializing a repo
+Repo
 
 # Adding files to the repo
+Repo
 
 # Commiting files to the repo
+Repo
 
 # Pushing files to a repo
+Repo
 
 # How git manages the version history
+Repo
 
 # Cloning a repo
 This means that you are downloading the code from the remote repository t o your local machine, in other  words you are creating a copy of the codebase.
@@ -80,5 +86,5 @@ git clone <REPO_URL>
 
 
 # Creating a branch and switching to branches 
-
+Repo
 
