@@ -32,44 +32,44 @@ Centralized version control systems, hosts the source code in one central server
 
 Specifically, as a DevOps engineer you need to learn git and understand how to manage codebase with git. Learning git is important for us a s DevOps engineers because many of the devops tools and processes like Continuous IntegrationéContinous Deployment (CICD) depend on a particular version of files. In this blog Ièd like to help you with your understanding of git. 
 
-#How to install git
+# How to install git
 I’ve linked a few videos for the installation of git clients on the popular operating systems. This is pretty much straight forward and resources are available on the internet.
  
-##Windows 
+## Windows 
 
 {{<youtube nbFwejIsHlY>}}
 
 
-##Linux
+## Linux
 In general linux machines have git client installed. 
 
 {{<youtube gdgravCh_Bw>}}
 
 
-##MacOS 
+## MacOS 
 
 {{<youtube PSULlxUk744>}}
 
 
-#Configuring git
+# Configuring git
 We have to configure our git client so that our information can be made available when performing various git operations. Below are the main configurations that would help us to use git effectively. 
 
-##
+## Global Configuration
 
-#Repositories and branches
+# Repositories and branches
 
 
-#Initializing a repo
+# Initializing a repo
 
-##Adding files to the repo
+# Adding files to the repo
 
-##Commiting files to the repo
+# Commiting files to the repo
 
-##Pushing files to a repo
+# Pushing files to a repo
 
-#How git manages the version history
+# How git manages the version history
 
-#Cloning a repo
+# Cloning a repo
 This means that you are downloading the code from the remote repository t o your local machine, in other  words you are creating a copy of the codebase.
 Command used is git clone. 
 
@@ -79,6 +79,6 @@ git clone <REPO_URL>
 
 
 
-#Creating a branch and switching to branches 
+# Creating a branch and switching to branches 
 
 
